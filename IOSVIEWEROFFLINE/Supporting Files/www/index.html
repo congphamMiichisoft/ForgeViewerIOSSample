@@ -1,0 +1,130 @@
+<!--/////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) Autodesk, Inc. All rights reserved
+// Written by Philippe Leefsma 2017 - ADN/Developer Technical Services
+//
+// Permission to use, copy, modify, and distribute this software in
+// object code form for any purpose and without fee is hereby granted,
+// provided that the above copyright notice appears in all copies and
+// that both that copyright notice and the limited warranty and
+// restricted rights notice below appear in all supporting
+// documentation.
+//
+// AUTODESK PROVIDES THIS PROGRAM "AS IS" AND WITH ALL FAULTS.
+// AUTODESK SPECIFICALLY DISCLAIMS ANY IMPLIED WARRANTY OF
+// MERCHANTABILITY OR FITNESS FOR A PARTICULAR USE.  AUTODESK, INC.
+// DOES NOT WARRANT THAT THE OPERATION OF THE PROGRAM WILL BE
+// UNINTERRUPTED OR ERROR FREE.
+////////////////////////////////////////////////////////////////////////////////-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, height=device-height, minimal-ui, minimum-scale=1.0, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="./www/lmv/3.3/style.min.css" type="text/css"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+      Forge Viewer
+    </title>
+    <meta charset="utf-8">
+    <style>
+      .viewer {
+        background: whitesmoke;
+        height: 100vh;
+        width: 100vw;
+      }
+      body {
+        margin:0
+      }
+    </style>
+  </head>
+  <body>
+
+    <div id="viewer" class="viewer"></div>
+    <script src="./www/lmv/3.3/viewer3D.min.js"></script>
+<!--    <script src="./www/viewer.js"></script>-->
+<script>
+    function initialize (options) {
+
+      return new Promise(function(resolve, reject) {
+
+        Autodesk.Viewing.Initializer (options,
+          function () {
+
+            resolve ()
+
+          }, function(error){
+
+            reject (error)
+          })
+      })
+    }
+    function loadDocument (urn) {
+
+      return new Promise(function(resolve, reject) {
+
+        var paramUrn = !urn.startsWith("urn:")
+          ? "urn:" + urn
+          : urn
+
+        Autodesk.Viewing.Document.load(paramUrn,
+          function(doc) {
+
+            resolve (doc)
+
+          }, function (error) {
+
+            reject (error)
+          })
+      })
+    }
+    function getViewableItems (doc, roles) {
+
+      var rootItem = doc.getRootItem()
+
+      var items = []
+
+      var roleArray = roles
+        ? (Array.isArray(roles) ? roles : [roles])
+        : []
+
+      roleArray.forEach(function(role) {
+
+        var subItems =
+          Autodesk.Viewing.Document.getSubItemsWithProperties(
+            rootItem, { type: "geometry", role: role }, true)
+
+        items = items.concat(subItems)
+      })
+
+      return items
+    }
+    function getQueryParam (name, url) {
+
+      if (!url) url = window.location.href;
+      name = name.replace(/[\\[\\]]/g, "\\$&");
+      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\\+/g, " "));
+    }
+    initialize({
+
+      //acccessToken: getQueryParam("acccessToken"),
+      env: "Local"
+
+    }).then(function() {
+      var viewerDiv = document.getElementById("viewer")
+
+      var viewer = new Autodesk.Viewing.Private.GuiViewer3D(viewerDiv)
+      
+      viewer.start()
+
+//      viewer.loadModel('./www/models/3D6/0.svf')
+        viewer.loadModel('./www/models$$$path')
+    })
+
+    </script>
+
+  </body>
+</html>
