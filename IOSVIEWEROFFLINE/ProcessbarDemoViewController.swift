@@ -107,4 +107,16 @@ class CircularProgressView: UIView {
         circularProgressAnimation.isRemovedOnCompletion = true
         progressLayer.add(circularProgressAnimation, forKey: "progressAnim")
     }
+    func setPercentLoading(from: Float ,percent : Float){
+        let circularProgressAnimation = CABasicAnimation(keyPath: "strokeEnd")
+        circularProgressAnimation.duration = 0
+        circularProgressAnimation.fromValue = from
+        circularProgressAnimation.toValue = percent
+        circularProgressAnimation.fillMode = .both
+        circularProgressAnimation.isRemovedOnCompletion = false
+        progressLayer.add(circularProgressAnimation, forKey: "progressAnim")
+        if percent == 1 {
+            self.isHidden = true
+        }
+    }
 }

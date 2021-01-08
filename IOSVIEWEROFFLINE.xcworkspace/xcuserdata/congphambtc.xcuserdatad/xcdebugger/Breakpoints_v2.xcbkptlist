@@ -3,4 +3,22 @@
    uuid = "7ED4E8B3-7C24-410F-BDF0-0F8CC7CFA92B"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "22768AAD-4C1E-49E9-85E4-DA0373374A66"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../Library/Developer/Xcode/DerivedData/IOSVIEWEROFFLINE-douwbrddreilmaakntjnjzwzavma/SourcePackages/checkouts/SwifterSwift/Sources/SwifterSwift/UIKit/UIWindowExtensions.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "switchRootViewController(to:animated:duration:options:_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

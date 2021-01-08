@@ -8,7 +8,9 @@
 import UIKit
 
 class BIMItemCollectionViewCell: UICollectionViewCell {
-    
+    var downloading : Bool = false
+    var last : Float = 0
+    var downloaded : Float!
     var indexPath : IndexPath!
     var rate : Float = 0
     var delegate : ((DispatchSemaphore)->Void)?
@@ -25,7 +27,7 @@ class BIMItemCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         let width = (UIScreen.main.bounds.width - 10) / 2
-        contentView.widthAnchor.constraint(equalToConstant: width).isActive = true
+//        contentView.widthAnchor.constraint(equalToConstant: width).isActive = true
         processView = CircularProgressView(frame: CGRect(x: 0, y: 0, width: width/8, height: width/8))
         processView.center = center
         addSubview(processView)
