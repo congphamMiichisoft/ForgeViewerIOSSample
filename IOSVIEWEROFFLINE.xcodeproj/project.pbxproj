@@ -7,17 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		014856D7259B7683007940D3 /* WebServerDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014856D6259B7683007940D3 /* WebServerDemoViewController.swift */; };
 		014856DE259B7E05007940D3 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 014856DD259B7E05007940D3 /* www */; };
 		0148570D259B815E007940D3 /* TeleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0148570C259B815E007940D3 /* TeleViewController.swift */; };
 		01485712259C5866007940D3 /* TelegraphDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01485711259C5866007940D3 /* TelegraphDemo.swift */; };
-		0148571E259C8BE8007940D3 /* ProcessbarDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0148571C259C8BE8007940D3 /* ProcessbarDemoViewController.swift */; };
-		0148571F259C8BE8007940D3 /* ProcessbarDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0148571D259C8BE8007940D3 /* ProcessbarDemoViewController.xib */; };
-		01485722259CAD5B007940D3 /* ListBIMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01485721259CAD5B007940D3 /* ListBIMViewController.swift */; };
-		01485726259CAE07007940D3 /* BIMItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01485724259CAE07007940D3 /* BIMItemCollectionViewCell.swift */; };
-		01485727259CAE07007940D3 /* BIMItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01485725259CAE07007940D3 /* BIMItemCollectionViewCell.xib */; };
 		0148573725A605BF007940D3 /* SwifterSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0148573625A605BF007940D3 /* SwifterSwift */; };
-		01D7F73F259B0A5800679B8C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D7F73E259B0A5800679B8C /* DetailViewController.swift */; };
 		01F571D5259A18F900A2322A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F571D4259A18F900A2322A /* AppDelegate.swift */; };
 		01F571D7259A18F900A2322A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F571D6259A18F900A2322A /* SceneDelegate.swift */; };
 		01F571D9259A18F900A2322A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F571D8259A18F900A2322A /* ViewController.swift */; };
@@ -27,16 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		014856D6259B7683007940D3 /* WebServerDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServerDemoViewController.swift; sourceTree = "<group>"; };
 		014856DD259B7E05007940D3 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 		0148570C259B815E007940D3 /* TeleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeleViewController.swift; sourceTree = "<group>"; };
 		01485711259C5866007940D3 /* TelegraphDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegraphDemo.swift; sourceTree = "<group>"; };
-		0148571C259C8BE8007940D3 /* ProcessbarDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessbarDemoViewController.swift; sourceTree = "<group>"; };
-		0148571D259C8BE8007940D3 /* ProcessbarDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProcessbarDemoViewController.xib; sourceTree = "<group>"; };
-		01485721259CAD5B007940D3 /* ListBIMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBIMViewController.swift; sourceTree = "<group>"; };
-		01485724259CAE07007940D3 /* BIMItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BIMItemCollectionViewCell.swift; sourceTree = "<group>"; };
-		01485725259CAE07007940D3 /* BIMItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BIMItemCollectionViewCell.xib; sourceTree = "<group>"; };
-		01D7F73E259B0A5800679B8C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		01F571D1259A18F900A2322A /* IOSVIEWEROFFLINE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSVIEWEROFFLINE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01F571D4259A18F900A2322A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01F571D6259A18F900A2322A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,18 +81,11 @@
 				01F571D4259A18F900A2322A /* AppDelegate.swift */,
 				01F571D6259A18F900A2322A /* SceneDelegate.swift */,
 				01F571D8259A18F900A2322A /* ViewController.swift */,
-				01D7F73E259B0A5800679B8C /* DetailViewController.swift */,
 				01F571DD259A18FB00A2322A /* Assets.xcassets */,
 				01F571DF259A18FB00A2322A /* LaunchScreen.storyboard */,
 				01F571E2259A18FB00A2322A /* Info.plist */,
-				014856D6259B7683007940D3 /* WebServerDemoViewController.swift */,
 				01485711259C5866007940D3 /* TelegraphDemo.swift */,
-				01485724259CAE07007940D3 /* BIMItemCollectionViewCell.swift */,
-				01485725259CAE07007940D3 /* BIMItemCollectionViewCell.xib */,
 				0148570C259B815E007940D3 /* TeleViewController.swift */,
-				01485721259CAD5B007940D3 /* ListBIMViewController.swift */,
-				0148571C259C8BE8007940D3 /* ProcessbarDemoViewController.swift */,
-				0148571D259C8BE8007940D3 /* ProcessbarDemoViewController.xib */,
 			);
 			path = IOSVIEWEROFFLINE;
 			sourceTree = "<group>";
@@ -194,9 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				014856DE259B7E05007940D3 /* www in Resources */,
-				01485727259CAE07007940D3 /* BIMItemCollectionViewCell.xib in Resources */,
 				01F571E1259A18FB00A2322A /* LaunchScreen.storyboard in Resources */,
-				0148571F259C8BE8007940D3 /* ProcessbarDemoViewController.xib in Resources */,
 				01F571DE259A18FB00A2322A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,15 +228,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0148570D259B815E007940D3 /* TeleViewController.swift in Sources */,
-				0148571E259C8BE8007940D3 /* ProcessbarDemoViewController.swift in Sources */,
 				01F571D9259A18F900A2322A /* ViewController.swift in Sources */,
 				01F571D5259A18F900A2322A /* AppDelegate.swift in Sources */,
 				01F571D7259A18F900A2322A /* SceneDelegate.swift in Sources */,
 				01485712259C5866007940D3 /* TelegraphDemo.swift in Sources */,
-				014856D7259B7683007940D3 /* WebServerDemoViewController.swift in Sources */,
-				01D7F73F259B0A5800679B8C /* DetailViewController.swift in Sources */,
-				01485726259CAE07007940D3 /* BIMItemCollectionViewCell.swift in Sources */,
-				01485722259CAD5B007940D3 /* ListBIMViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +375,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87KHR3A6W9;
 				INFOPLIST_FILE = IOSVIEWEROFFLINE/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -424,6 +397,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AU9KJCF4J4;
 				INFOPLIST_FILE = IOSVIEWEROFFLINE/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
